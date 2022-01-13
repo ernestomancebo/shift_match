@@ -5,7 +5,7 @@ This is a Python project with the goal to output a table containing pairs of emp
 
 
 
-The idea is simple: Two employees coincide if one of them start their shift ($s2_i$) whithin the time lapse the first employee was present ($S1_{i,o})$). Mathematically it's: $ s1_i \le s2_i \lt s1_o$.
+The idea is simple: Two employees coincide if one of them start their shift (<img src="https://render.githubusercontent.com/render/math?math=s2_{i}">) whithin the time lapse the first employee was present (<img src="https://render.githubusercontent.com/render/math?math=s1_{i,o}">). Mathematically it is: <img src="https://render.githubusercontent.com/render/math?math=s1_i \le s2_i \lt s1_o">.
 
 
 
@@ -25,7 +25,7 @@ The output of this would be something like the following.
 
 ### The file
 
-Important to note is the file structure. The given file must complaint the following format per line: `Employee Name=DDHH:MM-HH:MM,DDHH:MM-HH:MM,...` , being: `DD` a day acronym, valid values are: `MO, TU, WE, TH, FR, SA, SU `; `HH:MM` is the time of the day in a 24H format. **IMPORTANT: ** as a shift is a time range, it must be placed the clock in time first followed by the clock out. An example would be: `RENE=MO10:00-12:00,TU10:00-12:00`, and this is read: *Rene clocks in the monday at 10 and clocks out at 12*.
+Important to note that it is the file structure. The given file must comply the following format per line: `Employee Name=DDHH:MM-HH:MM,DDHH:MM-HH:MM,...`, being: `DD` a day acronym, valid values are: `MO, TU, WE, TH, FR, SA, SU `; `HH:MM` is the time of the day in a 24H format. **IMPORTANT:** as a shift is a time range, it must be placed the clock in time first followed by the clock out. An example would be: `RENE=MO10:00-12:00,TU10:00-12:00`, and this is read: *Rene clocks in on mondays at 10 and clocks out at 12*.
 
 
 
