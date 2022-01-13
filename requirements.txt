@@ -4,4 +4,3 @@ pytest-cov
 pytest-html
 autopep8
 pylint
-compileall
