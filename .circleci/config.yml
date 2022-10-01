@@ -16,7 +16,7 @@ jobs:
           pkg-manager: pip
       - run:
           name: Run Pylint
-          command: pylint shift_match
+          command: pylint shift_match && exit 0
       - run:
           name: Run tests
           command: python -m pytest
