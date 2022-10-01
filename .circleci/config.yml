@@ -15,5 +15,8 @@ jobs:
       - python/install-packages:
           pkg-manager: pip
       - run:
+          name: Run Pylint
+          command: pylint shift_match
+      - run:
           name: Run tests
           command: python -m pytest
