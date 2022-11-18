@@ -7,7 +7,7 @@ from shift_match.models import Shift
 class TestModels(unittest.TestCase):
 
     def setUp(self):
-        clock_in = datetime.today()
+        clock_in = datetime.today() + timedelta(days=1)
         clock_out = datetime.today()
 
         # Add 15 minutes
