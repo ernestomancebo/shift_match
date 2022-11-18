@@ -2,7 +2,7 @@ import unittest
 from datetime import datetime, timedelta
 
 from shift_match.models import Shift
-
+import copy
 
 class TestModels(unittest.TestCase):
 
@@ -16,7 +16,7 @@ class TestModels(unittest.TestCase):
         self.shift_under_test = Shift(clock_in.time(), clock_out.time())
 
     def test_shift_invalid(self):
-        other_shift = self.shift_under_test
+        other_shift = copy.copy(self.shift_under_test)
 
         # Clock in time rebases the clock out
         other_shift.clock_in = (
