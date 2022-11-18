@@ -9,7 +9,7 @@ class TestModels(unittest.TestCase):
     def setUp(self):
         self.shift_under_test = self.__get_shift()
 
-    def __get_shift() -> Shift:
+    def __get_shift(self) -> Shift:
         clock_in = datetime.today()
         clock_out = datetime.today()
 
