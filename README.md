@@ -1,5 +1,5 @@
 # Shift Match
-[![CircleCI](https://circleci.com/gh/ernestomancebo/shift_match/tree/master.svg?style=svg)](https://circleci.com/gh/ernestomancebo/shift_match/tree/master)
+[![CircleCI](https://circleci.com/gh/ernestomancebo/shift_match/tree/master.svg?style=svg)](https://circleci.com/gh/ernestomancebo/shift_match/tree/demo_ci)
 
 This is a Python project with the goal to output a table containing pairs of employees and how often they have coincided at the office.
 
